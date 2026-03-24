@@ -105,7 +105,7 @@ const galleryImages = [
     alt: "Peralatan paip"
   },
   {
-    url: "https://images.pexels.com/photos/5691534/pexels-photo-5691534.jpeg?auto=compress&cs=tinysrgb&w=600",
+    url: "https://images.unsplash.com/photo-1664227430687-9299c593e3da?crop=entropy&cs=srgb&fm=jpg&w=600",
     alt: "Pemasangan tandas"
   },
   {
