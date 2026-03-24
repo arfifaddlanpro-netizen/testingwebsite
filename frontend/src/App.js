@@ -336,8 +336,8 @@ const HeroSection = () => (
                   <Shield className="w-6 h-6 text-[#FF5E3A]" />
                 </div>
                 <div>
-                  <p className="font-bold text-[#0A1628]">Bergaransi</p>
-                  <p className="text-xs text-slate-500">Kerja Berkualiti</p>
+                  <p className="font-bold text-[#0A1628]">DIPERCAYAI</p>
+                  <p className="text-xs text-slate-500">Lebih 500 Pelanggan</p>
                 </div>
               </div>
             </div>
