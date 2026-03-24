@@ -1,34 +1,177 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Dr Plumber JB - Custom Styles */
+
+/* Hero Section Background */
+.hero-bg {
+    background-image: linear-gradient(to right, rgba(15, 42, 68, 0.92), rgba(15, 42, 68, 0.5)), 
+                      url('https://images.pexels.com/photos/358592/pexels-photo-358592.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
+/* Masonry Gallery Layout */
+.gallery-masonry {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .gallery-masonry {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
+@media (min-width: 1024px) {
+    .gallery-masonry {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.gallery-masonry .gallery-item:nth-child(1) {
+    grid-row: span 2;
+}
+
+.gallery-masonry .gallery-item:nth-child(4) {
+    grid-column: span 2;
+}
+
+/* Service Card Icon Animation */
+.service-icon {
+    transition: all 0.3s ease;
+}
+
+.card-service:hover .service-icon {
+    transform: scale(1.1);
+    color: #FF6B35;
+}
+
+/* Star Rating */
+.star-rating {
+    color: #FBBF24;
+}
+
+/* Mobile CTA Bar */
+.mobile-cta-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    background: linear-gradient(to top, rgba(15, 42, 68, 1), rgba(15, 42, 68, 0.95));
+    padding: 1rem;
     display: flex;
-    flex-direction: column;
+    gap: 0.75rem;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+}
+
+@media (min-width: 768px) {
+    .mobile-cta-bar {
+        display: none;
+    }
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    z-index: 50;
+}
+
+@media (min-width: 768px) {
+    .whatsapp-float {
+        bottom: 24px;
+    }
+}
+
+/* Emergency Badge Pulse */
+.emergency-badge {
+    position: relative;
+}
+
+.emergency-badge::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    background: #FF6B35;
+    border-radius: inherit;
+    animation: pulse-ring 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    z-index: -1;
+}
+
+/* Contact Form Focus States */
+.contact-input:focus {
+    outline: none;
+    border-color: #1E88E5;
+    box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.1);
+}
+
+/* Google Map Container */
+.map-container {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+/* Trust Badge Styling */
+.trust-badge {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #475569;
+    border: 1px solid #e2e8f0;
 }
 
-.App-link {
-    color: #61dafb;
+/* Section Wave Dividers */
+.wave-top {
+    transform: rotate(180deg);
 }
 
-@keyframes App-logo-spin {
+/* Sticky Header Transition */
+.header-sticky {
+    transition: all 0.3s ease;
+}
+
+.header-sticky.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Fade In Animation */
+@keyframes fadeInUp {
     from {
-        transform: rotate(0deg);
+        opacity: 0;
+        transform: translateY(30px);
     }
     to {
-        transform: rotate(360deg);
+        opacity: 1;
+        transform: translateY(0);
     }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* Hide scrollbar for mobile CTA area */
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
 }
