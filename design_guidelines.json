@@ -1,0 +1,168 @@
+{
+  "project_name": "Dr Plumber (Tukang Paip) JB",
+  "theme": "light",
+  "design_philosophy": {
+    "archetype": "The Reliable Pro",
+    "core_values": [
+      "Trustworthiness",
+      "Speed (Emergency Response)",
+      "Professionalism",
+      "Cleanliness"
+    ],
+    "vibe": "Clean, reassuring, and technically precise. Avoids the 'messy handyman' trope. Think 'Medical Doctor for your House'."
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Poppins, sans-serif",
+      "body": "Inter, sans-serif"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight",
+      "h2": "text-3xl md:text-4xl font-bold tracking-tight",
+      "h3": "text-2xl font-semibold tracking-normal",
+      "body": "text-base md:text-lg text-slate-600 leading-relaxed",
+      "caption": "text-sm text-slate-500 uppercase tracking-widest font-medium"
+    },
+    "rules": [
+      "Use Poppins ONLY for Headings (h1-h6).",
+      "Use Inter for all body text, buttons, and inputs.",
+      "Headings > 32px must have `tracking-tight`.",
+      "Labels must be uppercase with `tracking-widest`."
+    ]
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#0F2A44",
+        "description": "Deep Professional Blue - Used for Headings, Footer, and Primary Actions (hover)."
+      },
+      "secondary": {
+        "DEFAULT": "#1E88E5",
+        "description": "Modern Plumbing Blue - Used for Icons, Service Highlights, and Trust Badges."
+      },
+      "accent": {
+        "DEFAULT": "#FF6B35",
+        "description": "Emergency Orange - Used ONLY for 'Call Now' buttons and Urgent CTAs."
+      },
+      "success": {
+        "DEFAULT": "#22C55E",
+        "description": "WhatsApp Green - Used specifically for WhatsApp floating button and success states."
+      },
+      "background": {
+        "DEFAULT": "#F8FAFC",
+        "paper": "#FFFFFF",
+        "subtle": "#F1F5F9"
+      },
+      "text": {
+        "primary": "#0F172A",
+        "secondary": "#475569",
+        "muted": "#94A3B8"
+      }
+    },
+    "gradients": {
+      "hero_overlay": "bg-gradient-to-r from-slate-900/90 to-slate-900/40",
+      "service_card": "hover:bg-gradient-to-br hover:from-white hover:to-blue-50"
+    }
+  },
+  "layout": {
+    "grid_system": "Use 'Bento Grid' for Services and Gallery. Mobile-first: 1 column -> md: 2 columns -> lg: 3/4 columns.",
+    "spacing": {
+      "section_padding": "py-16 md:py-24",
+      "container_padding": "px-6 md:px-12 lg:px-20",
+      "element_gap": "gap-6 md:gap-8"
+    },
+    "container": "max-w-7xl mx-auto",
+    "strategies": [
+      "Mobile First: Sticky 'Call Now' bar at the bottom for mobile users (z-50).",
+      "Split Hero: Text on Left (or Bottom on mobile), Image on Right (or Top).",
+      "Wave Dividers: Use SVG waves between sections to soften the 'blocky' feel."
+    ]
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-accent hover:bg-accent/90 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1",
+      "secondary": "bg-white text-primary border-2 border-primary/10 hover:border-primary hover:bg-primary/5 font-semibold py-3 px-8 rounded-full transition-all",
+      "whatsapp": "bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center gap-2 font-bold fixed bottom-6 right-6 z-50 animate-bounce-slow"
+    },
+    "cards": {
+      "service": "bg-white p-8 rounded-2xl shadow-sm hover:shadow-md border border-slate-100 transition-all duration-300 group hover:border-secondary/20",
+      "testimonial": "bg-slate-50 p-6 rounded-xl border border-slate-100 relative"
+    },
+    "inputs": {
+      "default": "bg-white border-slate-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 rounded-lg py-3 px-4 transition-all"
+    }
+  },
+  "visual_enhancers": {
+    "shadows": "Use 'soft-lift' shadows: shadow-[0_8px_30px_rgb(0,0,0,0.04)].",
+    "borders": "Subtle 1px borders in slate-100/slate-200 to define structure without heaviness.",
+    "glassmorphism": "Use backdrop-blur-md bg-white/80 for sticky headers.",
+    "icons": "Use Lucide React icons. Stroke width: 1.5px. Color: Secondary Blue (#1E88E5)."
+  },
+  "motion": {
+    "entrance": "framer-motion: initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}",
+    "hover": "transform transition-transform duration-300 hover:-translate-y-1",
+    "scroll": "Lenis smooth scrolling is recommended for premium feel."
+  },
+  "images": {
+    "hero_bg": {
+      "url": "https://images.pexels.com/photos/358592/pexels-photo-358592.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Modern clean bathroom interior",
+      "treatment": "Overlay with dark gradient (hero_overlay) to ensure text readability."
+    },
+    "service_action": {
+      "url": "https://images.pexels.com/photos/7859953/pexels-photo-7859953.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Professional plumber fixing boiler",
+      "usage": "About Section or Service Detail"
+    },
+    "emergency_vehicle": {
+      "url": "https://images.pexels.com/photos/7363099/pexels-photo-7363099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Plumbing service van",
+      "usage": "Why Choose Us / Fast Response Section"
+    },
+    "trust_team": {
+      "url": "https://images.pexels.com/photos/8486978/pexels-photo-8486978.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Friendly professional plumber",
+      "usage": "Contact Section or Team"
+    },
+    "happy_customer": {
+      "url": "https://images.unsplash.com/photo-1772160106758-c6483d91126b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwyfHxoYXBweSUyMGFzaWFuJTIwZmFtaWx5JTIwaG9tZSUyMGxpdmluZyUyMHJvb218ZW58MHx8fHwxNzc0MzY1Mzc4fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Satisfied homeowners",
+      "usage": "Testimonials Section"
+    }
+  },
+  "content_strategy": {
+    "language": "Bahasa Malaysia (Formal but friendly)",
+    "key_phrases": [
+      "24 Jam Perkhidmatan Kecemasan",
+      "Pakar Tempatan JB",
+      "Respon Pantas - Sampai dalam 30 Minit",
+      "Harga Telus & Berpatutan"
+    ],
+    "trust_badges": [
+      "Disahkan Pakar",
+      "Waranti Perkhidmatan",
+      "5 Bintang Google Review"
+    ]
+  },
+  "accessibility": {
+    "contrast": "Ensure white text on blue buttons has sufficient contrast. Use darkened orange for hover states.",
+    "labels": "All icon-only buttons (like WhatsApp) must have aria-label.",
+    "focus": "Visible focus ring (ring-2 ring-offset-2 ring-primary) for keyboard navigation."
+  },
+  "universal_guidelines": [
+    "Do not use generic 'Inter' for Headings.",
+    "Avoid full-width buttons on desktop; keep them auto-width but generous padding.",
+    "Do not use pure black (#000000); use Slate-900 (#0F172A) instead.",
+    "Ensure all images have lazy loading enabled.",
+    "Use data-testid attributes for all interactive elements."
+  ],
+  "instructions_to_main_agent": {
+    "step_1": "Setup the layout wrapper with Poppins/Inter fonts configuration.",
+    "step_2": "Build the Sticky Mobile CTA first (it's the most critical conversion element).",
+    "step_3": "Develop the Hero section with the 'Split' strategy and provided background image.",
+    "step_4": "Implement the 'Bento' Services grid.",
+    "step_5": "Create the Testimonials section using the Google Review card style.",
+    "step_6": "Integrate the Contact form with Shadcn components and Google Maps placeholder.",
+    "step_7": "Final polish: Add smooth scroll (Lenis) and entrance animations."
+  }
+}
